@@ -1,0 +1,3108 @@
+<TEI
+    xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <teiHeader/>
+    <text>
+        <front/>
+        <body/>
+        <back>
+            <div>
+                <listBibl>
+                    <biblStruct xml:id="b0">
+                        <analytic>
+                            <title level="a" type="main">Hopelessness depression: A theory-based subtype of depression</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <forename type="middle">Y</forename>
+                                    <surname>Abramson</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">G</forename>
+                                    <forename type="middle">I</forename>
+                                    <surname>Metalsky</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <forename type="middle">B</forename>
+                                    <surname>Alloy</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Psychological Review</title>
+                            <imprint>
+                                <biblScope unit="page">358</biblScope>
+                                <date type="published" when="1989" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b1">
+                        <analytic>
+                            <title level="a" type="main">Assessment of mindfulness by selfreport the Kentucky inventory of mindfulness skills</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Baer</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">G</forename>
+                                    <forename type="middle">T</forename>
+                                    <surname>Smith</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <forename type="middle">B</forename>
+                                    <surname>Allen</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Assessment</title>
+                            <imprint>
+                                <biblScope unit="volume">11</biblScope>
+                                <biblScope unit="page" from="191" to="206" />
+                                <date type="published" when="2004" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b2">
+                        <analytic>
+                            <title level="a" type="main">Construct validity of the five facet mindfulness questionnaire in meditating and 3nonmeditating samples</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Baer</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">G</forename>
+                                    <forename type="middle">T</forename>
+                                    <surname>Smith</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <surname>Lykins</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <surname>Button</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <surname>Krietemeyer</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <surname>Sauer</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">.</forename>
+                                    <forename type="middle">.</forename>
+                                    <surname>Williams</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">M G</forename>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Assessment</title>
+                            <imprint>
+                                <biblScope unit="volume">15</biblScope>
+                                <biblScope unit="page" from="329" to="342" />
+                                <date type="published" when="2008" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b3">
+                        <analytic>
+                            <title level="a" type="main">Mediating role of resilience in the impact of mindfulness on life satisfaction and affect as indices of subjective well-being</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <surname>Bajaj</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">N</forename>
+                                    <surname>Pande</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Individual Differences</title>
+                            <imprint>
+                                <biblScope unit="volume">93</biblScope>
+                                <biblScope unit="page" from="63" to="67" />
+                                <date type="published" when="2016" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b4">
+                        <analytic>
+                            <title level="a" type="main">Theoretical propositions of life-span developmental psychology: On the dynamics between growth and decline</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <forename type="middle">B</forename>
+                                    <surname>Baltes</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Developmental psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">23</biblScope>
+                                <biblScope unit="page" from="611" to="626" />
+                                <date type="published" when="1987" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b5">
+                        <analytic>
+                            <title level="a" type="main">The moderator-mediator variable distinction in social psychological research: Conceptual, strategic, and statistical considerations</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Baron</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Kenny</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Personality and Social Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">51</biblScope>
+                                <biblScope unit="page">1173</biblScope>
+                                <date type="published" when="1986" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b6">
+                        <monogr>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Bartels</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <surname>Kvaran</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <surname>Nichols</surname>
+                                </persName>
+                            </author>
+                            <title level="m">Selfless giving. Cognition</title>
+                            <imprint>
+                                <date type="published" when="2013" />
+                                <biblScope unit="volume">129</biblScope>
+                                <biblScope unit="page" from="392" to="403" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b7">
+                        <analytic>
+                            <title level="a" type="main">Psychological connectedness and intertemporal choice</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Bartels</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Rips</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Experimental Psychology: General</title>
+                            <imprint>
+                                <biblScope unit="volume">139</biblScope>
+                                <biblScope unit="page" from="49" to="69" />
+                                <date type="published" when="2010" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b8">
+                        <analytic>
+                            <title level="a" type="main">The assessment of mindfulness with self-report measures: existing scales and open issues</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <surname>Bergomi</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">W</forename>
+                                    <surname>Tschacher</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">Z</forename>
+                                    <surname>Kupper</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Mindfulness</title>
+                            <imprint>
+                                <biblScope unit="volume">4</biblScope>
+                                <biblScope unit="page" from="191" to="202" />
+                                <date type="published" when="2013" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b9">
+                        <analytic>
+                            <title level="a" type="main">Experiencing the temporally extended self: Initial support for the role of affective states, vivid mental imagery, and future self-continuity in the prediction of academic procrastination</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E.-M</forename>
+                                    <forename type="middle">C</forename>
+                                    <surname>Blouin-Hudon</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Pychyl</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Individual Differences</title>
+                            <imprint>
+                                <biblScope unit="volume">86</biblScope>
+                                <biblScope unit="page" from="50" to="56" />
+                                <date type="published" when="2015" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b10">
+                        <monogr>
+                            <title level="m" type="main">The human organization of time: Temporal realities and experience</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <forename type="middle">C</forename>
+                                    <surname>Bluedorn</surname>
+                                </persName>
+                            </author>
+                            <imprint>
+                                <date type="published" when="2002" />
+                                <publisher>Stanford University Press</publisher>
+                                <pubPlace>Stanford, CA</pubPlace>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b11">
+                        <analytic>
+                            <title level="a" type="main">How temporal distance from past selves influences self-perception</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <surname>Broemer</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <surname>Grabowski</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Gebauer</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">O</forename>
+                                    <surname>Ermel</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <surname>Diehl</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">European Journal of Social Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">38</biblScope>
+                                <biblScope unit="page" from="697" to="714" />
+                                <date type="published" when="2008" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b12">
+                        <analytic>
+                            <title level="a" type="main">The benefits of being present: mindfulness and its role in psychological well-being</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <forename type="middle">W</forename>
+                                    <surname>Brown</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Ryan</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Personality and Social Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">84</biblScope>
+                                <biblScope unit="page">822</biblScope>
+                                <date type="published" when="2003" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b13">
+                        <analytic>
+                            <title level="a" type="main">Mindfulness: Theoretical foundations and evidence for its salutary effects</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <forename type="middle">W</forename>
+                                    <surname>Brown</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Ryan</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">D</forename>
+                                    <surname>Creswell</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Psychological Inquiry</title>
+                            <imprint>
+                                <biblScope unit="volume">18</biblScope>
+                                <biblScope unit="page" from="211" to="237" />
+                                <date type="published" when="2007" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b14">
+                        <analytic>
+                            <title level="a" type="main">You owe it to yourself: Boosting retirement saving with a responsibility-based appeal</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Bryan</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">H</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Hershfield</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Experimental Psychology. General</title>
+                            <imprint>
+                                <biblScope unit="volume">141</biblScope>
+                                <biblScope unit="page" from="429" to="432" />
+                                <date type="published" when="2012" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b15">
+                        <analytic>
+                            <title level="a" type="main">Measuring mindfulness in insight meditation (Vipassana) and meditation-based psychotherapy: The development of the Freiburg Mindfulness Inventory (FMI)</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">N</forename>
+                                    <surname>Buchheld</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <surname>Grossman</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">H</forename>
+                                    <surname>Walach</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal for Meditation and Meditation Research</title>
+                            <imprint>
+                                <biblScope unit="volume">1</biblScope>
+                                <biblScope unit="page" from="11" to="34" />
+                                <date type="published" when="2001" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b16">
+                        <analytic>
+                            <title level="a" type="main">How dispositional optimists and pessimists evaluate their past, present and anticipated future life satisfaction: a lifespan approach: positional optimism: past, present, future</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Busseri</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">European Journal of Personality</title>
+                            <imprint>
+                                <biblScope unit="volume">27</biblScope>
+                                <biblScope unit="page" from="185" to="199" />
+                                <date type="published" when="2013" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b17">
+                        <analytic>
+                            <title level="a" type="main">Functional or fantasy? Examining the implications of subjective temporal perspective&quot; trajectories&quot; for life satisfaction</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Busseri</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Choma</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">W</forename>
+                                    <surname>Sadava</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Social Psychology Bulletin</title>
+                            <imprint>
+                                <biblScope unit="volume">35</biblScope>
+                                <biblScope unit="page" from="295" to="308" />
+                                <date type="published" when="2009" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b18">
+                        <analytic>
+                            <title level="a" type="main">As good as it gets&quot; or &quot;The best is yet to come&quot;? How optimists and pessimists view their past, present, and anticipated future life satisfaction</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Busseri</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Choma</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">W</forename>
+                                    <surname>Sadava</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Individual Differences</title>
+                            <imprint>
+                                <biblScope unit="volume">47</biblScope>
+                                <biblScope unit="page" from="352" to="356" />
+                                <date type="published" when="2009" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b19">
+                        <analytic>
+                            <title level="a" type="main">Subjective temporal trajectories for subjective well-being</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Busseri</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Choma</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">W</forename>
+                                    <surname>Sadava</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Positive Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">7</biblScope>
+                                <biblScope unit="page" from="1" to="15" />
+                                <date type="published" when="2012" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b20">
+                        <analytic>
+                            <title level="a" type="main">Subjective trajectories for life satisfaction: A selfdiscrepancy perspective</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Busseri</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">H</forename>
+                                    <surname>Merrick</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Motivation and Emotion</title>
+                            <imprint>
+                                <biblScope unit="volume">40</biblScope>
+                                <biblScope unit="page" from="389" to="401" />
+                                <date type="published" when="2016" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b21">
+                        <analytic>
+                            <title level="a" type="main">Do (even) depressed individuals believe that life gets better and better? The link between depression and subjective trajectories for life satisfaction</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Busseri</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <surname>Peck</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Clinical Psychological Science</title>
+                            <imprint>
+                                <biblScope unit="volume">3</biblScope>
+                                <biblScope unit="page" from="715" to="725" />
+                                <date type="published" when="2014" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b22">
+                        <analytic>
+                            <title level="a" type="main">A review of the tripartite structure of subjective well-being: Implications for conceptualization, operationalization, analysis, and synthesis</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Busseri</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">W</forename>
+                                    <surname>Sadava</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Social Psychology Review</title>
+                            <imprint>
+                                <biblScope unit="volume">15</biblScope>
+                                <biblScope unit="page" from="290" to="314" />
+                                <date type="published" when="2011" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b23">
+                        <analytic>
+                            <title level="a" type="main">Longitudinal evaluation of the relationship between mindfulness, general distress, anxiety, and PTSD in a recently deployed national guard sample</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <surname>Call</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <surname>Pitcock</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <surname>Pyne</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Mindfulness</title>
+                            <imprint>
+                                <biblScope unit="volume">6</biblScope>
+                                <biblScope unit="page" from="1303" to="1312" />
+                                <date type="published" when="2015" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b24">
+                        <analytic>
+                            <title level="a" type="main">Impact of mindfulness-based stress reduction (MBSR) on attention, rumination and resting blood pressure in women with cancer: a waitlist-controlled study</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <forename type="middle">S</forename>
+                                    <surname>Campbell</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Labelle</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Bacon</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <surname>Faris</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Carlson</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Behavioral Medicine</title>
+                            <imprint>
+                                <biblScope unit="volume">35</biblScope>
+                                <biblScope unit="page" from="262" to="271" />
+                                <date type="published" when="2012" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b25">
+                        <analytic>
+                            <title level="a" type="main">Cognitive behavior therapy for social anxiety disorder in the context of Asperger&apos;s syndrome: a single-subject report</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <surname>Cardaciotto</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">D</forename>
+                                    <surname>Herbert</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Cognitive and Behavioral Practice</title>
+                            <imprint>
+                                <biblScope unit="volume">11</biblScope>
+                                <biblScope unit="page" from="75" to="81" />
+                                <date type="published" when="2005" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b26">
+                        <analytic>
+                            <title level="a" type="main">A wrinkle in time: Asymmetric valuation of past and future events</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Caruso</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <forename type="middle">T</forename>
+                                    <surname>Gilbert</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <forename type="middle">D</forename>
+                                    <surname>Wilson</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Psychological Science</title>
+                            <imprint>
+                                <biblScope unit="volume">19</biblScope>
+                                <biblScope unit="page" from="796" to="801" />
+                                <date type="published" when="2008" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b27">
+                        <analytic>
+                            <title/>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <forename type="middle">S</forename>
+                                    <surname>Carver</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">F</forename>
+                                    <surname>Scheier</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">C</forename>
+                                    <surname>Segerstrom</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Optimism. Clinical Psychology Review</title>
+                            <imprint>
+                                <biblScope unit="volume">30</biblScope>
+                                <biblScope unit="page" from="879" to="889" />
+                                <date type="published" when="2010" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b28">
+                        <analytic>
+                            <title level="a" type="main">Separate but equal? A comparison of participants and data gathered via Amazon&apos;s MTurk, social media, and face-to-face behavioral testing</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <surname>Casler</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <surname>Bickel</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <surname>Hackett</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Computers in Human Behavior</title>
+                            <imprint>
+                                <biblScope unit="volume">29</biblScope>
+                                <biblScope unit="page" from="2156" to="2160" />
+                                <date type="published" when="2013" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b29">
+                        <analytic>
+                            <title level="a" type="main">Responding mindfully to unpleasant thoughts and images: Reliability and validity of the Southampton mindfulness questionnaire (SMQ)</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <surname>Chadwick</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <surname>Hember</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <surname>Symes</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <surname>Peters</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <surname>Kuipers</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <surname>Dagnan</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">British Journal of Clinical Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">47</biblScope>
+                                <biblScope unit="page" from="451" to="455" />
+                                <date type="published" when="2008" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b30">
+                        <analytic>
+                            <title level="a" type="main">Does mindfulness training improve cognitive abilities? A systematic review of neuropsychological findings</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <surname>Chiesa</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <surname>Calati</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <surname>Serretti</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Clinical Psychology Review</title>
+                            <imprint>
+                                <biblScope unit="volume">31</biblScope>
+                                <biblScope unit="page" from="449" to="464" />
+                                <date type="published" when="2011" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b31">
+                        <analytic>
+                            <title level="a" type="main">Multidimensional Future Time Perspective as Moderators of the Relationships between Suicide Motivation, Preparation, and Its Predictors</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <surname>Chin</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">R</forename>
+                                    <surname>Holden</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Suicide and Life-Threatening Behavior</title>
+                            <imprint>
+                                <biblScope unit="volume">43</biblScope>
+                                <biblScope unit="page" from="395" to="405" />
+                                <date type="published" when="2013" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b32">
+                        <monogr>
+                            <title level="m" type="main">Deciphering Subjective Trajectories for Life Satisfaction Using Self-versus-Normative Other Discrepancies, Self-esteem and Hope: Deciphering subjective trajectories</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Choma</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Busseri</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">W</forename>
+                                    <surname>Sadava</surname>
+                                </persName>
+                            </author>
+                            <imprint>
+                                <date type="published" when="2014" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b33">
+                        <analytic>
+                            <title/>
+                        </analytic>
+                        <monogr>
+                            <title level="j">European Journal of Personality</title>
+                            <imprint>
+                                <biblScope unit="volume">28</biblScope>
+                                <biblScope unit="page" from="107" to="119" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b34">
+                        <monogr>
+                            <title/>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">S</forename>
+                                    <surname>Christopher</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <surname>Charoensuk</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <forename type="middle">D</forename>
+                                    <surname>Gilbert</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Neary</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Pearce</surname>
+                                </persName>
+                            </author>
+                            <imprint>
+                                <date type="published" when="2009" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b35">
+                        <analytic>
+                            <title level="a" type="main">Mindfulness in Thailand and the United States: a case of apples versus oranges</title>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Clinical Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">65</biblScope>
+                                <biblScope unit="page" from="590" to="612" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b36">
+                        <analytic>
+                            <title level="a" type="main">Mechanisms of action in the inverse relationship between mindfulness and psychological distress</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Coffrey</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <surname>Hartman</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Complementary Health Practice Review</title>
+                            <imprint>
+                                <biblScope unit="volume">13</biblScope>
+                                <biblScope unit="page" from="79" to="91" />
+                                <date type="published" when="2008" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b37">
+                        <monogr>
+                            <title level="m" type="main">Seeing the &quot;forest&quot; or the &quot;trees&quot; of organizational justice: Effects of temporal perspective on employee concerns about unfair treatment at work. Organizational Behavior and Human Decision Processes</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">I</forename>
+                                    <surname>Cojuharenco</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <surname>Patient</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">R</forename>
+                                    <surname>Bashshur</surname>
+                                </persName>
+                            </author>
+                            <imprint>
+                                <date type="published" when="2011" />
+                                <biblScope unit="volume">116</biblScope>
+                                <biblScope unit="page" from="17" to="31" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b38">
+                        <analytic>
+                            <title level="a" type="main">An exploratory examination of the viability and meaningfulness of time attitudes profiles in adults</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">C</forename>
+                                    <surname>Cole</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">R</forename>
+                                    <surname>Andretta</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">T</forename>
+                                    <surname>Mckay</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Individual Differences</title>
+                            <imprint>
+                                <biblScope unit="volume">106</biblScope>
+                                <biblScope unit="page" from="146" to="151" />
+                                <date type="published" when="2017" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b39">
+                        <analytic>
+                            <title level="a" type="main">The Circles Test: An Investigation of Perceptions of Temporal Relatedness and Dominance</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Cottle</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Projective Techniques and Personality Assessment</title>
+                            <imprint>
+                                <biblScope unit="volume">31</biblScope>
+                                <biblScope unit="page" from="58" to="71" />
+                                <date type="published" when="1967" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b40">
+                        <analytic>
+                            <title level="a" type="main">Time preference and personal identity</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <surname>Frederick</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="m">Time and decision</title>
+                            <editor>G. Loewenstein, D. Read, &amp; R. Baumeister</editor>
+                            <meeting>
+                                <address>
+                                    <addrLine>New York</addrLine>
+                                </address>
+                            </meeting>
+                            <imprint>
+                                <publisher>Russell Sage</publisher>
+                                <date type="published" when="2003" />
+                                <biblScope unit="page" from="89" to="113" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b41">
+                        <analytic>
+                            <title level="a" type="main">Perfectionism and other related trait measures as predictors of mortality in diabetic older adults: A six-and-a-half-year longitudinal study</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <forename type="middle">S</forename>
+                                    <surname>Fry</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Debats</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Health Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">16</biblScope>
+                                <biblScope unit="page" from="1058" to="1070" />
+                                <date type="published" when="2011" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b42">
+                        <analytic>
+                            <title level="a" type="main">Tomorrow I could be in trouble…but the sun will come out next year: The effect of temporal distance on adolescents&apos; judgments of life satisfaction</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <surname>Garcia</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <surname>Rosenberg</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <surname>Siddiqui</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Adolescence</title>
+                            <imprint>
+                                <biblScope unit="volume">34</biblScope>
+                                <biblScope unit="page" from="751" to="757" />
+                                <date type="published" when="2011" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b43">
+                        <analytic>
+                            <title level="a" type="main">Temporal relatedness: Personality and behavioural correlates</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">H</forename>
+                                    <surname>Gestinger</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Personality Assessment</title>
+                            <imprint>
+                                <biblScope unit="volume">39</biblScope>
+                                <biblScope unit="page" from="405" to="408" />
+                                <date type="published" when="1975" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b44">
+                        <analytic>
+                            <title level="a" type="main">8-week Mindfulness Based Stress Reduction induces brain changes similar to traditional long-term meditation practice-A systematic review</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Gotink</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <surname>Meijboom</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">W</forename>
+                                    <surname>Vernooij</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <surname>Smits</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">G M</forename>
+                                    <surname>Hunink</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Brain and Cognition</title>
+                            <imprint>
+                                <biblScope unit="volume">108</biblScope>
+                                <biblScope unit="page" from="32" to="41" />
+                                <date type="published" when="2016" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b45">
+                        <analytic>
+                            <title level="a" type="main">Multidimensional assessment of emotion regulation and dysregulation: Development, factor structure, and initial validation of the difficulties in emotion regulation scale</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Gratz</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <surname>Roemer</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Psychopathology and Behavioral Assessment</title>
+                            <imprint>
+                                <biblScope unit="volume">26</biblScope>
+                                <biblScope unit="page" from="41" to="54" />
+                                <date type="published" when="2004" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b46">
+                        <analytic>
+                            <title level="a" type="main">On measuring mindfulness in psychosomatic and psychological research</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <surname>Grossman</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of psychosomatic research</title>
+                            <imprint>
+                                <biblScope unit="volume">64</biblScope>
+                                <biblScope unit="page" from="405" to="408" />
+                                <date type="published" when="2008" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b47">
+                        <analytic>
+                            <title level="a" type="main">How do mindfulness-based cognitive Therapy and mindfulness-based stress reduction improve mental health and wellbeing? A systematic review and meta-analysis of mediation studies</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <surname>Gu</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <surname>Strauss</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <surname>Bond</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <surname>Cavanagh</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Clinical Psychology Review</title>
+                            <imprint>
+                                <biblScope unit="volume">37</biblScope>
+                                <biblScope unit="page" from="1" to="12" />
+                                <date type="published" when="2015" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b48">
+                        <analytic>
+                            <title level="a" type="main">Culture, temporal focus, and values of the past and the future</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <surname>Guo</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Ji</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <surname>Spina</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">Z</forename>
+                                    <surname>Zhang</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Social Psychology Bulletin</title>
+                            <imprint>
+                                <biblScope unit="volume">38</biblScope>
+                                <biblScope unit="page" from="1030" to="1040" />
+                                <date type="published" when="2012" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b49">
+                        <analytic>
+                            <title level="a" type="main">Debiasing the mind through meditation mindfulness and the sunk-cost bias</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <forename type="middle">C</forename>
+                                    <surname>Hafenbrack</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">Z</forename>
+                                    <surname>Kinias</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">G</forename>
+                                    <surname>Barsade</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Psychological Science</title>
+                            <imprint>
+                                <biblScope unit="volume">25</biblScope>
+                                <biblScope unit="page" from="369" to="376" />
+                                <date type="published" when="2014" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b50">
+                        <analytic>
+                            <title level="a" type="main">Attentive Turkers: MTurk participants perform better on online attention checks than do subject pool participants</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Hauser</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">N</forename>
+                                    <surname>Schwarz</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Behavior Research Methods</title>
+                            <imprint>
+                                <biblScope unit="volume">48</biblScope>
+                                <biblScope unit="page" from="400" to="407" />
+                                <date type="published" when="2016" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b51">
+                        <analytic>
+                            <title level="a" type="main">Gains and losses in development throughout adulthood as perceived by different adult age groups</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <surname>Heckhausen</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Dixon</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <forename type="middle">B</forename>
+                                    <surname>Baltes</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Developmental Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">25</biblScope>
+                                <biblScope unit="page">109</biblScope>
+                                <date type="published" when="1989" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b52">
+                        <analytic>
+                            <title level="a" type="main">Short horizons and tempting situations: Lack of continuity to our future selves leads to unethical decision making and behavior</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">H</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Hershfield</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <forename type="middle">R</forename>
+                                    <surname>Cohen</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <surname>Thompson</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Organizational Behavior and Human Decision Processes</title>
+                            <imprint>
+                                <biblScope unit="volume">117</biblScope>
+                                <biblScope unit="page" from="298" to="310" />
+                                <date type="published" when="2012" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b53">
+                        <analytic>
+                            <title level="a" type="main">Attachment mediates effects of trait mindfulness on stress responses to conflict</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Hertz</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">H</forename>
+                                    <forename type="middle">K</forename>
+                                    <surname>Laurent</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Laurent</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Mindfulness</title>
+                            <imprint>
+                                <biblScope unit="volume">6</biblScope>
+                                <biblScope unit="page" from="483" to="489" />
+                                <date type="published" when="2015" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b54">
+                        <analytic>
+                            <title level="a" type="main">Self-discrepancy theory: What patterns of self-beliefs cause people to suffer?</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <forename type="middle">T</forename>
+                                    <surname>Higgins</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Advances in Experimental Social Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">22</biblScope>
+                                <biblScope unit="page" from="93" to="136" />
+                                <date type="published" when="1989" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b55">
+                        <analytic>
+                            <title level="a" type="main">Self-criticism as a mediator in the relationship between unhealthy perfectionism and distress</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <surname>James</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <surname>Verplanken</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Rimes</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Individual Differences</title>
+                            <imprint>
+                                <biblScope unit="volume">79</biblScope>
+                                <biblScope unit="page" from="123" to="128" />
+                                <date type="published" when="2015" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b56">
+                        <monogr>
+                            <title level="m" type="main">Wherever you go, there you are</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <surname>Kabat-Zinn</surname>
+                                </persName>
+                            </author>
+                            <imprint>
+                                <date type="published" when="1994" />
+                                <publisher>Hyperion</publisher>
+                                <pubPlace>New York</pubPlace>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b57">
+                        <analytic>
+                            <title level="a" type="main">Self-anchoring scaling: A measure of individuals&apos; unique reality worlds</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">F</forename>
+                                    <forename type="middle">P</forename>
+                                    <surname>Kilpatrick</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">H</forename>
+                                    <surname>Cantril</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Individual Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">16</biblScope>
+                                <biblScope unit="page">158</biblScope>
+                                <date type="published" when="1960" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b58">
+                        <analytic>
+                            <title level="a" type="main">Time for a change: Temporal perspectives and health goals</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">Knepple</forename>
+                                    <surname>Carney</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <surname>Patrick</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">H</forename>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Individual Differences</title>
+                            <imprint>
+                                <biblScope unit="volume">109</biblScope>
+                                <biblScope unit="page" from="220" to="224" />
+                                <date type="published" when="2017" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b59">
+                        <analytic>
+                            <title level="a" type="main">Realism and illusion in americans&apos; temporal views of their life satisfaction age differences in reconstructing the past and anticipating the future</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Lachman</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <surname>Röcke</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <surname>Rosnick</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <forename type="middle">D</forename>
+                                    <surname>Ryff</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Psychological Science</title>
+                            <imprint>
+                                <biblScope unit="volume">19</biblScope>
+                                <biblScope unit="page" from="889" to="897" />
+                                <date type="published" when="2008" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b60">
+                        <analytic>
+                            <title level="a" type="main">Temporal orientation and academic goal-setting: The mediating properties of a motivational self</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <forename type="middle">P</forename>
+                                    <surname>Lasane</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Jones</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Social Behavior and Personality</title>
+                            <imprint>
+                                <biblScope unit="volume">14</biblScope>
+                                <biblScope unit="page">31</biblScope>
+                                <date type="published" when="1999" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b61">
+                        <analytic>
+                            <title level="a" type="main">Time orientation measurement: a conceptual approach</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <forename type="middle">P</forename>
+                                    <surname>Lasane</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <surname>Donnell</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="m">Understanding behaviour in the context of time</title>
+                            <editor>A. Strathman &amp; J. Joireman</editor>
+                            <meeting>
+                                <address>
+                                    <addrLine>Mahwah, NJ</addrLine>
+                                </address>
+                            </meeting>
+                            <imprint>
+                                <publisher>Lawrence Erlbaum Associates</publisher>
+                                <date type="published" when="2005" />
+                                <biblScope unit="page" from="11" to="30" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b62">
+                        <analytic>
+                            <title level="a" type="main">The Toronto mindfulness scale: Development and validation</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Lau</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">R</forename>
+                                    <surname>Bishop</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">Z</forename>
+                                    <forename type="middle">V</forename>
+                                    <surname>Segal</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <surname>Buis</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">N</forename>
+                                    <forename type="middle">D</forename>
+                                    <surname>Anderson</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <surname>Carlson</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">.</forename>
+                                    <forename type="middle">.</forename>
+                                    <surname>Devins</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">G</forename>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Clinical Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">62</biblScope>
+                                <biblScope unit="page" from="1445" to="1468" />
+                                <date type="published" when="2006" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b63">
+                        <analytic>
+                            <title level="a" type="main">Observing as an Essential Facet of Mindfulness: A Comparison of FFMQ Patterns in Meditating and Non-Meditating Individuals</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Lilja</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L.-G</forename>
+                                    <surname>Lundh</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <surname>Josefsson</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">F</forename>
+                                    <surname>Falkenström</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Mindfulness</title>
+                            <imprint>
+                                <biblScope unit="volume">4</biblScope>
+                                <biblScope unit="page" from="203" to="212" />
+                                <date type="published" when="2013" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b64">
+                        <analytic>
+                            <title level="a" type="main">Personality development across the life span: Longitudinal analyses with a national sample from Germany</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Lucas</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">B</forename>
+                                    <surname>Donnellan</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Personality and Social Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">101</biblScope>
+                                <biblScope unit="page" from="847" to="861" />
+                                <date type="published" when="2011" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b65">
+                        <monogr>
+                            <title level="m" type="main">Trait mindfulness in relation to emotional self-regulation and executive function</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <surname>Lyvers</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <surname>Makin</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <surname>Toms</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">F</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Thorberg</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <surname>Samios</surname>
+                                </persName>
+                            </author>
+                            <imprint>
+                                <date type="published" when="2014" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b66">
+                        <analytic>
+                            <title/>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Mindfulness</title>
+                            <imprint>
+                                <biblScope unit="volume">5</biblScope>
+                                <biblScope unit="page" from="619" to="625" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b67">
+                        <analytic>
+                            <title level="a" type="main">Report on the Construct Validity of the Temporal Satisfaction with Life Scale</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <forename type="middle">N</forename>
+                                    <surname>Mcintosh</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Social Indicators Research</title>
+                            <imprint>
+                                <biblScope unit="volume">54</biblScope>
+                                <biblScope unit="page" from="37" to="56" />
+                                <date type="published" when="2001" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b68">
+                        <analytic>
+                            <title level="a" type="main">Measuring trait mindfulness: How to improve the precision of the mindful attention awareness scale using a rasch model</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">O</forename>
+                                    <forename type="middle">N</forename>
+                                    <surname>Medvedev</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Siegert</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">X</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Feng</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <forename type="middle">R</forename>
+                                    <surname>Billington</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">Y</forename>
+                                    <surname>Jang</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <forename type="middle">U</forename>
+                                    <surname>Krägeloh</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Mindfulness</title>
+                            <imprint>
+                                <biblScope unit="volume">7</biblScope>
+                                <biblScope unit="page" from="384" to="395" />
+                                <date type="published" when="2016" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b69">
+                        <analytic>
+                            <title level="a" type="main">The adolescent time inventory-English. Unpublished scale</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">Z</forename>
+                                    <forename type="middle">R</forename>
+                                    <surname>Mello</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">F</forename>
+                                    <forename type="middle">C. ; A</forename>
+                                    <surname>Worrell</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <surname>Malinowski</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Consciousness and cognition</title>
+                            <imprint>
+                                <biblScope unit="volume">18</biblScope>
+                                <biblScope unit="page" from="176" to="186" />
+                                <date type="published" when="2007" />
+                            </imprint>
+                            <respStmt>
+                                <orgName>The University of California, Berkeley, United States Moore,</orgName>
+                            </respStmt>
+                        </monogr>
+                        <note>Meditation, mindfulness and cognitive flexibility</note>
+                    </biblStruct>
+                    <biblStruct xml:id="b70">
+                        <analytic>
+                            <title level="a" type="main">Cross-cultural variations in predictors of life satisfaction: Perspectives from needs and values</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <surname>Oishi</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <forename type="middle">F</forename>
+                                    <surname>Diener</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Lucas</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Suh</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Social Psychology Bulletin</title>
+                            <imprint>
+                                <biblScope unit="volume">25</biblScope>
+                                <biblScope unit="page" from="980" to="990" />
+                                <date type="published" when="1999" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b71">
+                        <analytic>
+                            <title level="a" type="main">Stepping out of history: Mindfulness improves insight problem solving</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <forename type="middle">D</forename>
+                                    <surname>Ostafin</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <forename type="middle">T</forename>
+                                    <surname>Kassman</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Consciousness and Cognition</title>
+                            <imprint>
+                                <biblScope unit="volume">21</biblScope>
+                                <biblScope unit="page" from="1031" to="1036" />
+                                <date type="published" when="2012" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b72">
+                        <analytic>
+                            <title level="a" type="main">Running experiments on amazon mechanical turk</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">G</forename>
+                                    <surname>Paolacci</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <surname>Chandler</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <forename type="middle">G</forename>
+                                    <surname>Ipeirotis</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Judgment and Decision Making</title>
+                            <imprint>
+                                <biblScope unit="volume">5</biblScope>
+                                <biblScope unit="page" from="411" to="419" />
+                                <date type="published" when="2010" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b73">
+                        <analytic>
+                            <title level="a" type="main">The temporal satisfaction with life scale</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">W</forename>
+                                    <surname>Pavot</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <surname>Diener</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">E</forename>
+                                    <surname>Suh</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Personality Assessment</title>
+                            <imprint>
+                                <biblScope unit="volume">70</biblScope>
+                                <biblScope unit="page" from="340" to="354" />
+                                <date type="published" when="1998" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b74">
+                        <analytic>
+                            <title level="a" type="main">Regulatory focus and temporal distance</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">G</forename>
+                                    <forename type="middle">L</forename>
+                                    <surname>Pennington</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">N</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Roese</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Experimental Social Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">39</biblScope>
+                                <biblScope unit="page" from="563" to="576" />
+                                <date type="published" when="2003" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b75">
+                        <analytic>
+                            <title level="a" type="main">Anger Rumination as a Mediator of the Relationship Between Mindfulness and Aggression: The Utility of a Multidimensional Mindfulness Model: Mindfulness, Anger Rumination, and Aggression</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">R</forename>
+                                    <surname>Peters</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Smart</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">T</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Eisenlohr-Moul</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Geiger</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">G</forename>
+                                    <forename type="middle">T</forename>
+                                    <surname>Smith</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Baer</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Clinical Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">71</biblScope>
+                                <biblScope unit="page" from="871" to="884" />
+                                <date type="published" when="2015" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b76">
+                        <analytic>
+                            <title level="a" type="main">Mindfulness facets distinctively predict depressive symptoms after two years: The mediating role of rumination</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">N</forename>
+                                    <surname>Petrocchi</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <surname>Ottaviani</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Personality and Individual Differences</title>
+                            <imprint>
+                                <biblScope unit="volume">93</biblScope>
+                                <biblScope unit="page" from="92" to="96" />
+                                <date type="published" when="2016" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b77">
+                        <analytic>
+                            <title level="a" type="main">The role of emotion regulation and cognitive control in the association between mindfulness disposition and stress</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">S</forename>
+                                    <surname>Prakash</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">A</forename>
+                                    <surname>Hussain</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <surname>Schirda</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Psychology and Aging</title>
+                            <imprint>
+                                <biblScope unit="volume">30</biblScope>
+                                <biblScope unit="issue">1</biblScope>
+                                <biblScope unit="page">160</biblScope>
+                                <date type="published" when="2015" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b78">
+                        <analytic>
+                            <title level="a" type="main">Mindfulness and emotion regulation in older and young adults</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">S</forename>
+                                    <surname>Prakash</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <surname>Whitmoyer</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <surname>Aldao</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">B</forename>
+                                    <surname>Schirda</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Aging &amp; Mental Health</title>
+                            <imprint>
+                                <biblScope unit="page" from="1" to="11" />
+                                <date type="published" when="2015" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b79">
+                        <monogr>
+                            <title level="m" type="main">Which mindfulness measures to choose to use? Industrial and Organizational Psychology</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">Y</forename>
+                                    <surname>Qu</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">)</forename>
+                                    <surname>Elly</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">T</forename>
+                                    <surname>Dasborough</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">G</forename>
+                                    <surname>Todorova</surname>
+                                </persName>
+                            </author>
+                            <imprint>
+                                <date type="published" when="2015" />
+                                <biblScope unit="volume">8</biblScope>
+                                <biblScope unit="page" from="710" to="723" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b80">
+                        <analytic>
+                            <title level="a" type="main">The direct and indirect benefits of dispositional mindfulness on self-esteem and social anxiety</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">K</forename>
+                                    <surname>Rasmussen</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <forename type="middle">M</forename>
+                                    <surname>Pidgeon</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Stress, &amp; Coping</title>
+                            <imprint>
+                                <biblScope unit="volume">24</biblScope>
+                                <biblScope unit="page" from="227" to="233" />
+                                <date type="published" when="2011" />
+                            </imprint>
+                        </monogr>
+                        <note>Anxiety</note>
+                    </biblStruct>
+                    <biblStruct xml:id="b81">
+                        <analytic>
+                            <title level="a" type="main">Mindfulness and health behaviors: is paying attention good for you</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <forename type="middle">C</forename>
+                                    <surname>Roberts</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <surname>Danoff-Burg</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of American College Health</title>
+                            <imprint>
+                                <biblScope unit="volume">59</biblScope>
+                                <biblScope unit="page" from="165" to="173" />
+                                <date type="published" when="2010" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b82">
+                        <analytic>
+                            <title level="a" type="main">Positive illusions about the self: short-term benefits and long-term costs</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">R</forename>
+                                    <forename type="middle">W</forename>
+                                    <surname>Robins</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">S</forename>
+                                    <surname>Beer</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Personality and Social Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">80</biblScope>
+                                <biblScope unit="page">340</biblScope>
+                                <date type="published" when="2001" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b83">
+                        <analytic>
+                            <title level="a" type="main">Perceived trajectories of life satisfaction across past, present, and future: profiles and correlates of subjective change in young, middle-aged, and older adults</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <surname>Röcke</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Lachman</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Psychology and Aging</title>
+                            <imprint>
+                                <biblScope unit="volume">23</biblScope>
+                                <biblScope unit="page" from="833" to="847" />
+                                <date type="published" when="2008" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b84">
+                        <analytic>
+                            <title level="a" type="main">Relation of implicit theories to the construction of personal histories</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <surname>Ross</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Psychological Review</title>
+                            <imprint>
+                                <biblScope unit="page">341</biblScope>
+                                <date type="published" when="1989" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b85">
+                        <analytic>
+                            <title/>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <surname>Ross</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <forename type="middle">J</forename>
+                                    <surname>Heine</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Wilson</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">S</forename>
+                                    <surname>Sugimori</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Cross-Cultural Discrepancies in Self-Appraisals. Personality and Social Psychology Bulletin</title>
+                            <imprint>
+                                <biblScope unit="volume">31</biblScope>
+                                <biblScope unit="issue">9</biblScope>
+                                <biblScope unit="page" from="1175" to="1188" />
+                                <date type="published" when="2005" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b86">
+                        <analytic>
+                            <title level="a" type="main">Construing the past and future</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <surname>Ross</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">I</forename>
+                                    <forename type="middle">R</forename>
+                                    <surname>Newby-Clark</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Social Cognition</title>
+                            <imprint>
+                                <biblScope unit="volume">16</biblScope>
+                                <biblScope unit="page" from="133" to="150" />
+                                <date type="published" when="1998" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b87">
+                        <analytic>
+                            <title level="a" type="main">It feels like yesterday: Self-esteem, valence of personal past experiences, and judgments of subjective distance</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <surname>Ross</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">A</forename>
+                                    <forename type="middle">E</forename>
+                                    <surname>Wilson</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Personality and Social Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">82</biblScope>
+                                <biblScope unit="page" from="792" to="803" />
+                                <date type="published" when="2002" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b88">
+                        <analytic>
+                            <title level="a" type="main">Life scripts help to maintain autobiographical memories of highly positive, but not highly negative, events</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <forename type="middle">C</forename>
+                                    <surname>Rubin</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <surname>Berntsen</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Memory &amp; Cognition</title>
+                            <imprint>
+                                <biblScope unit="volume">31</biblScope>
+                                <biblScope unit="page" from="1" to="14" />
+                                <date type="published" when="2003" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b89">
+                        <analytic>
+                            <title level="a" type="main">Happiness is everything, or is it? Explorations on the meaning of psychological well-being</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">C</forename>
+                                    <forename type="middle">D</forename>
+                                    <surname>Ryff</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Journal of Personality and Social Psychology</title>
+                            <imprint>
+                                <biblScope unit="volume">57</biblScope>
+                                <biblScope unit="page">1069</biblScope>
+                                <date type="published" when="1989" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b90">
+                        <monogr>
+                            <title/>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">K</forename>
+                                    <surname>Salters-Pedneault</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <surname>Roemer</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">M</forename>
+                                    <forename type="middle">T</forename>
+                                    <surname>Tull</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">L</forename>
+                                    <surname>Rucker</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">D</forename>
+                                    <forename type="middle">S</forename>
+                                    <surname>Mennin</surname>
+                                </persName>
+                            </author>
+                            <imprint>
+                                <date type="published" when="2006" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b91">
+                        <analytic>
+                            <title level="a" type="main">Evidence of Broad Deficits in Emotion Regulation Associated with Chronic Worry and Generalized Anxiety Disorder</title>
+                        </analytic>
+                        <monogr>
+                            <title level="j">Cognitive Therapy and Research</title>
+                            <imprint>
+                                <biblScope unit="volume">30</biblScope>
+                                <biblScope unit="page" from="469" to="480" />
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="b92">
+                        <analytic>
+                            <title level="a" type="main">Springer. (Past, Present, and Future) Questionnaire Looking for people between the ages of 18 and 40, whose first language is English and who live in the United States. Participants will be asked to answer several questions about their opinions, beliefs, and emotions about their past, present, and anticipated future life</title>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">P</forename>
+                                    <forename type="middle">G</forename>
+                                    <surname>Zimbardo</surname>
+                                </persName>
+                            </author>
+                            <author>
+                                <persName
+                                    xmlns="http://www.tei-c.org/ns/1.0">
+                                    <forename type="first">J</forename>
+                                    <forename type="middle">N</forename>
+                                    <surname>Boyd</surname>
+                                </persName>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="m">Time Perspective Theory; Review, Research and Application</title>
+                            <imprint>
+                                <date type="published" when="2015" />
+                                <biblScope unit="page" from="17" to="55" />
+                            </imprint>
+                        </monogr>
+                        <note>Putting time in perspective: A valid, reliable individual-differences metric. Select the link below to complete the survey. At the end of the survey, you will receive a code to paste into the box below to receive credit for taking our survey</note>
+                    </biblStruct>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>
