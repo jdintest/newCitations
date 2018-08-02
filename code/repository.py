@@ -1,6 +1,7 @@
 import requests
 from thesis import Thesis
 import dateutil.parser
+from mongoConnector import MongoConnector
 
 class Repository:
         

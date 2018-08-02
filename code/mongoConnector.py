@@ -10,7 +10,6 @@ class MongoConnector:
                 self.toProcess = self.db.toProcess
                 self.processed = self.db.processed
                 self.failed = self.db.failed
-                self.lastHarvest = self.db.lastHarvest
 
         def updateCollection(self, collection, action, item ):
 
@@ -32,9 +31,9 @@ class MongoConnector:
 
                 return item
         
-        def getLastHarvest(self):
+        def getHighestItem(self):
 
-                return self.processed.find().sort({harvestedOn:-1}).limit(1)['id']
+                return self.processed.find_one(sort=[("item",-1)])['item']
                         
 
         def writeHandlesToMongo(communities,year):
