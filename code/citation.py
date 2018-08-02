@@ -10,6 +10,7 @@ class Citation:
 
                 self.id = parentThesis.handle + "-" + citationXML.attrs['xml:id']
                 self.handle = parentThesis.handle
+                self.item = parentThesis.item
                 self.degree = parentThesis.degree
                 self.thesisDate = parentThesis.thesisDate
                 self.citationXML = citationXML

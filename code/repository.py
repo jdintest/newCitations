@@ -18,8 +18,8 @@ class Repository:
 
                 for collection in self.collections:
                         theses = self.getTheses(collection)
-                        for thesis_id in theses:
-                                thesis = Thesis(thesis_id)
+                        for thesis_item in theses:
+                                thesis = Thesis(thesis_item)
                                 if dateutil.parser.parse(thesis.thesisDate) >= dateutil.parser.parse(str(lastHarvestDate) + "-01-01T00:00:00Z "):
                                         doc = {"handle":thesis.handle,"item":thesis_id}
                                         print("Writing to Mongo...")
@@ -34,9 +34,9 @@ class Repository:
 
                 for collection in self.collections:
                         theses = self.getTheses(collection)
-                        for thesis_id in theses:
-                                if thesis_id > self.highestProcessedID:
-                                        doc = {"item":thesis_id}
+                        for thesis_item in theses:
+                                if thesis_item > self.highestProcessedID:
+                                        doc = {"item":thesis_item}
                                         print(doc)
                                         print("Writing to Mongo...")
                                         try:

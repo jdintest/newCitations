@@ -13,7 +13,7 @@ repo = Repository()
 
 #setup Mongo connection and ensure indexes are created
 mongoConn = MongoConnector()
-mongoConn.setUpIndexes()
+mongoConn.setupCollections()
 
 #harvest theses from 2018, store IDs in Mongo to be processed
 repo.harvest(2018)

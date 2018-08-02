@@ -7,9 +7,9 @@ from urllib.parse import quote
 
 
 class Thesis:
-        def __init__(self, itemNumber):
+        def __init__(self, item):
                 
-                self.id = str(itemNumber)
+                self.item = str(item)
                 self.baseURL ="https://dr.library.brocku.ca/rest"
                 self.allMetadata = self.getMetadata()
                 self.handle = self.allMetadata['handle']
@@ -20,7 +20,7 @@ class Thesis:
         def getPDF(self):
                 
                 bitstreams = []
-                r = requests.get(self.baseURL + "/items/" + str(self.id) + '/bitstreams')
+                r = requests.get(self.baseURL + "/items/" + str(self.item) + '/bitstreams')
                 bitstreamList = r.json()
                 for bitstream in bitstreamList:
                         if bitstream['mimeType'] == 'application/pdf':
@@ -33,8 +33,8 @@ class Thesis:
 
         
         def getMetadata(self):
-                metadata = {"item":self.id}
-                r = requests.get(self.baseURL + "/items/" +str(self.id) + '/metadata')
+                metadata = {"item":self.item}
+                r = requests.get(self.baseURL + "/items/" +str(self.item) + '/metadata')
                 if r.status_code == 200:
                         response = r.json()
                         
@@ -163,16 +163,16 @@ class Thesis:
 
         def updateDB(self):
 
-                processedInsert = {"id":self.id,"handle":self.handle,"harvestedOn":self.harvestedOn}
+                processedInsert = {"item":self.item,"handle":self.handle,"harvestedOn":self.harvestedOn}
                 print(processedInsert)
 
-                #self.MongoConn.updateCollection("processed", processedInsert, "add")
+                self.MongoConn.updateCollection("processed", "add", processedInsert)
 
-                #self.MongoConn.updateCollection("toProcess", self, "delete")
+                self.MongoConn.updateCollection("toProcess", "delete", processedInsert)
 
                 for citation in self.citations:
                         try:
-                                #self.MongoConn.updateCollection("citaitons", citation, "add")
+                                self.MongoConn.updateCollection("citations", "add", citation)
                                 print(citation['id'])
                         except:
                                 pass
