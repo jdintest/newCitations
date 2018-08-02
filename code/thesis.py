@@ -56,7 +56,7 @@ class Thesis:
 
                 '''
                 
-                url = "http://cloud.science-miner.com/grobid/api/processReferences"
+                url = "http://localhost:8080/api/processReferences"
                 files = {"input": self.pdf}
 
                 r = requests.post(url,files=files)
