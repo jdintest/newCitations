@@ -16,11 +16,11 @@ class MongoConnector:
                 if action == "add":
                         getattr(self, collection).insert(item)
                 elif action == "delete":
-                        getattr(self,collection).remove({'id':item['id']})
+                        getattr(self,collection).remove({'item':item['id']})
                 
         def setupCollections(self):
                 self.citations.create_index("id",unique=True)
-                self.toProcess.create_index("handle",unique=True)
+                self.toProcess.create_index("item",unique=True)
 
                 print("Indexes created")
         

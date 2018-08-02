@@ -9,8 +9,8 @@ class Repository:
                 self.baseURL = "https://dr.library.brocku.ca/rest"
                 self.communities = ['4','22','23'] # communities which contain theses in Brock DSpace
                 self.collections = self.getAllCollections() # all collections which contain theses
-                self.MongoConn = MongoConnector()
-                self.highestProcessedID = int(self.MongoConn.getLastHarvest())
+                self.mongoConn = MongoConnector()
+                self.highestProcessedID = int(self.mongoConn.getHighestItem())
                 #self.LastHarvestDate = self.MongoConn.getLastHarvest() 
 
         def harvest(self, lastHarvestDate):
@@ -35,14 +35,16 @@ class Repository:
                 for collection in self.collections:
                         theses = self.getTheses(collection)
                         for thesis_id in theses:
-                                if thesis_id > highestProcessedID:
-                                        doc = {"handle":thesis.handle,"item":thesis_id}
-                                        print("Writing to Mongo...")
+                                if thesis_id > self.highestProcessedID:
+                                        doc = {"item":thesis_id}
                                         print(doc)
-                                        allTheses.append(doc)
-                                                                                
-        
-                return allTheses
+                                        print("Writing to Mongo...")
+                                        try:
+                                            self.mongoConn.updateCollection("toProcess","add",doc)
+                                        except:
+                                            print("Failed. Item already in processing queue.")
+                        else:
+                            break
 
 
         def getCollections(self, community):
