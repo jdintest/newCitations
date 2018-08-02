@@ -43,8 +43,8 @@ class Repository:
                                             self.mongoConn.updateCollection("toProcess","add",doc)
                                         except:
                                             print("Failed. Item already in processing queue.")
-                        else:
-                            break
+                                else:
+                                    break
 
 
         def getCollections(self, community):
