@@ -16,7 +16,7 @@ mongoConn = MongoConnector()
 mongoConn.setupCollections()
 
 #harvest theses from 2018, store IDs in Mongo to be processed
-repo.harvest(2018)
+repo.harvestSinceLastProcessed()
 
 #process a batch of theses
 #ProcessTheses(20)
@@ -24,7 +24,7 @@ repo.harvest(2018)
 def ProcessThesis():
 
         failed = None
-        thesis_item = mongoConn.getThesisToProcess()['item']
+        thesis_item = mongoConn.getThesisToProcess()
 
         thesis = Thesis(thesis_item)
         

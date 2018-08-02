@@ -21,7 +21,7 @@ class Repository:
                         for thesis_item in theses:
                                 thesis = Thesis(thesis_item)
                                 if dateutil.parser.parse(thesis.thesisDate) >= dateutil.parser.parse(str(lastHarvestDate) + "-01-01T00:00:00Z "):
-                                        doc = {"handle":thesis.handle,"item":thesis_id}
+                                        doc = {"handle":thesis.handle,"item":thesis_item}
                                         print("Writing to Mongo...")
                                         print(doc)
                                         allTheses.append(doc)

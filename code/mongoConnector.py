@@ -16,7 +16,7 @@ class MongoConnector:
                 if action == "add":
                         getattr(self, collection).insert(item)
                 elif action == "delete":
-                        getattr(self,collection).remove({'item':item['id']})
+                        getattr(self,collection).remove({'item':item['item']})
                 
         def setupCollections(self):
                 self.citations.create_index("id",unique=True)

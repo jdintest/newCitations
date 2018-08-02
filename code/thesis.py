@@ -161,18 +161,18 @@ class Thesis:
                         print(vars(citation))
                         self.citations.append(vars(citation))
 
-        def updateDB(self):
+        def updateDB(self,mongoConn):
 
                 processedInsert = {"item":self.item,"handle":self.handle,"harvestedOn":self.harvestedOn}
                 print(processedInsert)
 
-                self.MongoConn.updateCollection("processed", "add", processedInsert)
+                mongoConn.updateCollection("processed", "add", processedInsert)
 
-                self.MongoConn.updateCollection("toProcess", "delete", processedInsert)
+                mongoConn.updateCollection("toProcess", "delete", processedInsert)
 
                 for citation in self.citations:
                         try:
-                                self.MongoConn.updateCollection("citations", "add", citation)
+                                mongoConn.updateCollection("citations", "add", citation)
                                 print(citation['id'])
                         except:
                                 pass
