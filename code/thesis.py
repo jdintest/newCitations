@@ -153,7 +153,7 @@ class Thesis:
                         citation.callCrossRef()
                 
                         ## reconcile any ISSN/title
-                        #citation.reconcileTitle()
+                        citation.reconcileTitle()
                         
                         ## call CrossRef API
                         citation.callSFX()

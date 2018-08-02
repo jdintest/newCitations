@@ -179,18 +179,19 @@ class Citation:
                 '''
 
                 journalMatch = None
-
-                if self.issn != None:
-                        issns = self.issn
-                        for issn in issns:
-                                journalMatch = self.MongoConn.journals.find_one({"issn":issn}) 
+                if hasattr(self,"issn") == True:
+                    issns = self.issn
+                    for issn in issns:
+                        journalMatch = self.MongoConn.journals.find_one({"issn":issn}) 
                                 
-                elif self.titleMono != None:
-                        title = self.titleMono
-                        journalMatch = self.MongoConn.journals.find_one({"$or":[{"main_title":title},{"all_titles":title},{"abbreviation":title}]})
-                        
+                elif hasattr(self, "titleMono") == True:
+                    title = self.titleMono
+                    journalMatch = self.MongoConn.journals.find_one({"$or":[{"main_title":title},{"all_titles":title},{"abbreviation":title}]})
+                
                 if journalMatch != None:
-                        self.journalID = journalMatch['id_journal']
+                    self.journalID = journalMatch['id_journal']
+                
+                del self.MongoConn
 
 
                 
