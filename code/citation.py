@@ -191,6 +191,7 @@ class Citation:
                 
                 if journalMatch != None:
                     self.journalID = journalMatch['id_journal']
+                    self.issn = journalMatch['normalized_issn'] 
                 
                 del self.MongoConn
 

@@ -2,6 +2,8 @@ import requests
 from thesis import Thesis
 import dateutil.parser
 from mongoConnector import MongoConnector
+import time
+
 
 class Repository:
         
@@ -10,7 +12,7 @@ class Repository:
                 self.communities = ['4','22','23'] # communities which contain theses in Brock DSpace
                 self.collections = self.getAllCollections() # all collections which contain theses
                 self.mongoConn = MongoConnector()
-                self.highestProcessedID = int(self.mongoConn.getHighestItem())
+                #self.highestProcessedID = int(self.mongoConn.getHighestItem())
                 #self.LastHarvestDate = self.MongoConn.getLastHarvest() 
 
         def harvest(self, lastHarvestDate):
@@ -19,15 +21,20 @@ class Repository:
                 for collection in self.collections:
                         theses = self.getTheses(collection)
                         for thesis_item in theses:
-                                thesis = Thesis(thesis_item)
+                                time.sleep(1)
+                                try:
+                                    thesis = Thesis(thesis_item)
+                                except:
+                                    print("something went wrong")
+                                    break
                                 if dateutil.parser.parse(thesis.thesisDate) >= dateutil.parser.parse(str(lastHarvestDate) + "-01-01T00:00:00Z "):
-                                        doc = {"handle":thesis.handle,"item":thesis_item}
+                                        doc = {"item":thesis_item,"handle":thesis.handle}
                                         print("Writing to Mongo...")
+                                        try:
+                                            self.mongoConn.updateCollection("toProcess","add",doc)
+                                        except:
+                                            print("failed. already in collection")
                                         print(doc)
-                                        allTheses.append(doc)
-                                                                                
-        
-                return allTheses
 
         def harvestSinceLastProcessed(self):
                 allTheses = []
