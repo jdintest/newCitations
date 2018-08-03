@@ -3,6 +3,8 @@ import dateutil.parser
 from bs4 import BeautifulSoup, Comment
 from urllib.parse import quote
 from mongoConnector import MongoConnector
+import idutils
+from habanero import Crossref
 
 class Citation:
         
@@ -25,8 +27,17 @@ class Citation:
                 articleMonogr = self.citationXML.monogr
                 authors = self.citationXML("author")
                 ptr = self.citationXML("ptr")
-                
+                doi = self.citationXML.find("idno")
 
+                if doi != None:
+                    print("idno detected") 
+                    try:
+                        self.doi = idutils.normalize_doi(doi.string)
+                        print("looks like it worked")
+                    except:
+                        print("didn't work")
+                        
+                
                 if len(authors) > 0:
 
                         ##error checking
@@ -64,10 +75,6 @@ class Citation:
                                                 self.dataForCrossRef += self.titleArticle
 
                         
-                        # anything with a <ptr> block in Grobid seems to be a webpage or something with a link.
-                        ### TO DO : Do some more checking to see if this is actually true ###       
-                        if len(ptr) > 0:
-                                self.type = "internet"
                         
                 else:
                         pass
@@ -94,35 +101,65 @@ class Citation:
                                             break
                 
         
-        def callCrossRef(self):
+
+
+        def CrossRefDOI(self):
+            if hasattr(self, "doi") == True:
+                c = Crossref(mailto="jdingle@brocku.ca")
+                try:
+                    r = c.works(ids = [self.doi])
+                    r = r['message']
+                    if r.get("type") == "journal-article":
+                        self.type = "journal"
+                        self.titleArticle = r['title'][0]
+                        self.titleMono = r['container-title'][0]
+                    elif r.get("type" == "book-chapter"):
+                        self.type = "chapter"
+                        self.titleArticle = r['title'][0]
+                        self.titleMono = r['container-title'][0]
+                        self.isbn = r['ISBN'][0]
+                    elif r.get("type") == "book":
+                        self.type = "monograph"
+                        self.titleMono = r['title'][0]
+                        self.isbn = r['ISBN'][0]
+                    self.date = dateutil.parser.parse("-".join(r['issued']['date-parts'][0]))
+                    self.confidenceScore = r['score']
+                except:
+                    pass
+
+
+        def CrossRefSearch(self):
 
                 '''
                 takes citation from grobid, calls Crossref for doi and ISSN data
 
                 dict -> dict
                 '''
+                c = Crossref(mailto = "jdingle@brocku.ca")
 
                 if self.type in ['journal','monograph']:
-                                payload = quote(str(self.dataForCrossRef))
-                                r = requests.get("https://api.crossref.org/works?query=" + payload + "&mailto=jdingle@brocku.ca")
-                                if r.status_code == 200:
-                                        firstResponse = r.json()
-                                        if len(firstResponse['message']['items']) > 0:
-                                                response = r.json()['message']['items'][0]
-                                                self.confidenceScore = response['score']
-                                                #this error threshold of 60 was determined by trial and error. It can be adjusted to be more or less conservative.
-                                                if self.confidenceScore > 60:
-                                                        self.doi = response['DOI']
-                                                        if response.get("ISSN") != None:
-                                                                self.issn = response.get("ISSN")
+                    payload = quote(str(self.dataForCrossRef))
+                    r = requests.get("https://api.crossref.org/works?query=" + payload + "&mailto=jdingle@brocku.ca")
+                    if r.status_code == 200:
+                        firstResponse = r.json()
+                        if len(firstResponse['message']['items']) > 0:
+                            response = r.json()['message']['items'][0]
+                            self.confidenceScore = response['score']
+                            #this error threshold of 60 was determined by trial and error. It can be adjusted to be more or less conservative.
+                            if self.confidenceScore > 60:
+                                self.doi = response['DOI']
+                                self.CrossRefDOI()
 
-                                
-                                
-                del self.dataForCrossRef
-                del self.citationXML
+
 
                 
-                
+        def cleanupForOutput(self):
+            del self.dataForCrossRef
+            del self.citationXML
+            del self.MongoConn
+            if hasattr(self,"issn") == True:
+                self.issn = list(set(self.issn))
+        
         def callSFX(self):
 
                 '''
@@ -191,9 +228,13 @@ class Citation:
                 
                 if journalMatch != None:
                     self.journalID = journalMatch['id_journal']
-                    self.issn = journalMatch['normalized_issn'] 
+                    if hasattr(self, "issn") == True:
+                        self.issn.insert(0,journalMatch['normalized_issn'])
+                       
+                    else:
+                        self.issn = [journalMatch['normalized_issn']]
                 
-                del self.MongoConn
+               
 
 
                 

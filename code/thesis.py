@@ -150,13 +150,19 @@ class Thesis:
                         citation.correctType()
 
                         ## call CrossRef API
-                        citation.callCrossRef()
+                        if hasattr(citation, "doi") == True:
+                            citation.CrossRefDOI()
+                        else:
+                            citation.CrossRefSearch()
                 
                         ## reconcile any ISSN/title
                         citation.reconcileTitle()
                         
-                        ## call CrossRef API
+                        ## call SFX for access data
                         citation.callSFX()
+
+                        ## cleanup for input to DB
+                        citation.cleanupForOutput()
 
                         print(vars(citation))
                         self.citations.append(vars(citation))
