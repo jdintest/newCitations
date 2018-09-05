@@ -3,37 +3,106 @@ import dateutil.parser
 from bs4 import BeautifulSoup, Comment
 from urllib.parse import quote
 from mongoConnector import MongoConnector
-import idutils
+#import idutils
 from habanero import Crossref
 
 class Citation:
         
-        def __init__(self, parentThesis, citationXML):
+        def __init__(self, parentObject, citationResponse, citationID):
 
-                self.id = parentThesis.handle + "-" + citationXML.attrs['xml:id']
-                self.handle = parentThesis.handle
-                self.item = parentThesis.item
-                self.degree = parentThesis.degree
-                self.thesisDate = parentThesis.thesisDate
-                self.citationXML = citationXML
+                self.id = str(parentObject.id) + str(citationID)
+                if parentObject.type == "thesis":
+                        self.handle = parentObject.handle
+                        #self.item = parentObject.id
+                        self.degree = parentObject.degree
+                if citationResponse.get("DOI") != None:
+                        self.doi = citationResponse.get("DOI")
+                self.parentDate = parentObject.date
+                self.citationResponse = citationResponse
                 self.dataForCrossRef = ''
                 self.type = "unknown"
                 self.MongoConn = MongoConnector()
 
-        def extractMetadataFromCitationXML(self):
+        def getCrossRefMetadata(self):
+                if hasattr(self, "doi") == True:
+                        c = Crossref(mailto="jdingle@brocku.ca")
+                        try:
+                            r = c.works(ids = [self.doi])
+                            r = r['message']
+            
+                            self.date = r.get("issued") #fix this at some point to parse date
+                            self.confidenceScore = r.get("score")
+                            
+                            if r.get("type") == "journal-article":
+                                self.type = "journal-article"
+                                self.titleArticle = r['title'][0]
+                                self.titleMono = r['container-title'][0]
+                                self.issn = r['ISSN']
+                            elif r.get("type") == "book-chapter":
+                                self.type = "chapter"
+                                self.titleArticle = r['title'][0]
+                                self.titleMono = r['container-title'][0]
+                                self.isbn = r['ISBN']
+                            elif r.get("type") == "book":
+                                self.type = "monograph"
+                                self.titleMono = r['title'][0]
+                                self.isbn = r['ISBN']
+                            elif r.get("type") == "proceedings-article":
+                                self.type="proceedings"
+                                self.titleArticle = r['title'][0]
+                                self.titleMono = r['container-title'][0]
+                                self.isbn = r['ISBN']
+                            self.source = "CrossRef"
+
+                        except:
+                            pass
+
+        def extractMetadataNoDOI(self):
+
+            if self.source == "Microsoft Academic":
+                self.author = citationResponse.get("ANF")
+                if citationResponse.get("VFN") == None and (citationResponse.get("BV") == None or citationResponse.get("BV") == ""):
+                    self.type ="monograph"
+                    self.titleMono = citationResponse.get("DN")
+
+                elif citationResponse.get("BK") != None and citationResponse.get("DN") != None:
+                    self.titleMono = citationResponse.get("BK")
+                    self.titleArticle = citationResponse.get("DN")
+                    self.type = 'book-chapter'
+                    
+                else:
+                    self.type = "journal-article"
+                    self.titleMono = citationResponse.get("BV")
+                    self.titleArticle = citationResponse.get("DN")
+
+                self.date = citationResponse.get("Y")
+
+            elif self.source == "CrossRef":
+
+                for key,value in citationResponse.items():
+                    #print(key,value)
+                    setattr(self,key,value)
+
+                if hasattr(self,"series-title") or hasattr(self,"volume-title"):
+                    self.type = "monograph"
+                else:
+                    self.type="journal-article"
+
+        def extractMetadataFromCitationResponse(self):
 
                 #grobid things - different parts of the citation
-                articleAnalytic = self.citationXML.analytic
-                articleMonogr = self.citationXML.monogr
-                authors = self.citationXML("author")
-                ptr = self.citationXML("ptr")
-                doi = self.citationXML.find("idno")
+                articleAnalytic = self.citationResponse.analytic
+                articleMonogr = self.citationResponse.monogr
+                authors = self.citationResponse("author")
+                ptr = self.citationResponse("ptr")
+                doi = self.citationResponse.find("idno")
 
                 if doi != None:
                     print("idno detected") 
                     try:
                         self.doi = idutils.normalize_doi(doi.string)
                         print("looks like it worked")
+                        #return None
                     except:
                         print("didn't work")
                         
@@ -103,31 +172,6 @@ class Citation:
         
 
 
-        def CrossRefDOI(self):
-            if hasattr(self, "doi") == True:
-                c = Crossref(mailto="jdingle@brocku.ca")
-                try:
-                    r = c.works(ids = [self.doi])
-                    r = r['message']
-                    if r.get("type") == "journal-article":
-                        self.type = "journal"
-                        self.titleArticle = r['title'][0]
-                        self.titleMono = r['container-title'][0]
-                    elif r.get("type" == "book-chapter"):
-                        self.type = "chapter"
-                        self.titleArticle = r['title'][0]
-                        self.titleMono = r['container-title'][0]
-                        self.isbn = r['ISBN'][0]
-                    elif r.get("type") == "book":
-                        self.type = "monograph"
-                        self.titleMono = r['title'][0]
-                        self.isbn = r['ISBN'][0]
-                    self.date = dateutil.parser.parse("-".join(r['issued']['date-parts'][0]))
-                    self.confidenceScore = r['score']
-                except:
-                    pass
-
-
         def CrossRefSearch(self):
 
                 '''
@@ -148,14 +192,14 @@ class Citation:
                             #this error threshold of 60 was determined by trial and error. It can be adjusted to be more or less conservative.
                             if self.confidenceScore > 60:
                                 self.doi = response['DOI']
-                                self.CrossRefDOI()
+                                self.getCrossRefMetadata()
 
 
 
                 
         def cleanupForOutput(self):
             del self.dataForCrossRef
-            del self.citationXML
+            del self.citationResponse
             del self.MongoConn
             if hasattr(self,"issn") == True:
                 self.issn = list(set(self.issn))
@@ -205,8 +249,19 @@ class Citation:
                                                    self.access = "none"
                         else:
                                 self.access = "unknown"
+                
                 else:
                         self.access = "unknown"
+
+        def callCatalogue(self):
+                if hasattr(self,"ISBN"):
+                        for isbn in self.isbn:
+                                r = requests.get('https://catalogue.library.brocku.ca/search/a?searchtype=i&searcharg=' + str(isbn))
+                                if r.status_code == 200:
+                                        if r.text.find("No matches found") == -1:
+                                                self.access = "Library Catalogue"
+                                                break
+                
 
                         
         def reconcileTitle(self):
@@ -237,5 +292,7 @@ class Citation:
                
 
 
-                
+
+
+        
                   
