@@ -260,7 +260,7 @@ class Citation:
                         self.access = "unknown"
 
         def callCatalogue(self):
-                if hasattr(self,"ISBN"):
+                if hasattr(self,"isbn"):
                         for isbn in self.isbn:
                                 r = requests.get('https://catalogue.library.brocku.ca/search/a?searchtype=i&searcharg=' + str(isbn))
                                 if r.status_code == 200:
@@ -285,7 +285,7 @@ class Citation:
                     for issn in issns:
                         journalMatch = self.MongoConn.journals.find_one({"issn":issn}) 
                                 
-                elif hasattr(self, "titleMono") == True:
+                elif hasattr(self, "titleContainer") == True:
                     title = self.titleMono
                     journalMatch = self.MongoConn.journals.find_one({"$or":[{"main_title":title},{"all_titles":title},{"abbreviation":title}]})
                 
