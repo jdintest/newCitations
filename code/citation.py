@@ -5,6 +5,8 @@ from urllib.parse import quote
 from mongoConnector import MongoConnector
 #import idutils
 from habanero import Crossref
+import json
+import time
 
 class Citation:
         
@@ -20,8 +22,7 @@ class Citation:
                 self.parentDate = parentObject.date
                 self.citationResponse = citationResponse
                 self.dataForCrossRef = ''
-                self.type = "unknown"
-                self.MongoConn = MongoConnector()
+                #self.MongoConn = MongoConnector()
 
         def getCrossRefMetadata(self):
                 if hasattr(self, "doi") == True:
@@ -30,27 +31,28 @@ class Citation:
                             r = c.works(ids = [self.doi])
                             r = r['message']
             
-                            self.date = r.get("issued") #fix this at some point to parse date
                             self.confidenceScore = r.get("score")
+                            if r.get("issued") != None:
+                                    self.date = dateutil.parser.parse("-".join(str(x) for x in r.get("issued")['date-parts'][0]))
                             
                             if r.get("type") == "journal-article":
                                 self.type = "journal-article"
-                                self.titleArticle = r['title'][0]
-                                self.titleMono = r['container-title'][0]
+                                self.title = r['title'][0]
+                                self.containerTitle = r['container-title'][0]
                                 self.issn = r['ISSN']
                             elif r.get("type") == "book-chapter":
                                 self.type = "chapter"
-                                self.titleArticle = r['title'][0]
-                                self.titleMono = r['container-title'][0]
+                                self.title = r['title'][0]
+                                self.containerTitle = r['container-title'][0]
                                 self.isbn = r['ISBN']
-                            elif r.get("type") == "book":
+                            elif r.get("type") == "book" or r.get("type") == "monograph":
                                 self.type = "monograph"
-                                self.titleMono = r['title'][0]
+                                self.title = r['title'][0]
                                 self.isbn = r['ISBN']
                             elif r.get("type") == "proceedings-article":
                                 self.type="proceedings"
-                                self.titleArticle = r['title'][0]
-                                self.titleMono = r['container-title'][0]
+                                self.title = r['title'][0]
+                                self.containerTitle = r['container-title'][0]
                                 self.isbn = r['ISBN']
                             self.source = "CrossRef"
 
@@ -59,34 +61,37 @@ class Citation:
 
         def extractMetadataNoDOI(self):
 
-            if self.source == "Microsoft Academic":
-                self.author = citationResponse.get("ANF")
-                if citationResponse.get("VFN") == None and (citationResponse.get("BV") == None or citationResponse.get("BV") == ""):
+            if self.citationResponse.get("source") == "Microsoft Academic":
+                self.author = self.citationResponse.get("ANF")
+                if self.citationResponse.get("VFN") == None and (self.citationResponse.get("BV") == None or self.citationResponse.get("BV") == ""):
                     self.type ="monograph"
-                    self.titleMono = citationResponse.get("DN")
+                    self.title = self.citationResponse.get("DN")
 
-                elif citationResponse.get("BK") != None and citationResponse.get("DN") != None:
-                    self.titleMono = citationResponse.get("BK")
-                    self.titleArticle = citationResponse.get("DN")
+                elif self.citationResponse.get("BK") != None and self.citationResponse.get("DN") != None:
+                    self.containerTitle = self.citationResponse.get("BK")
+                    self.title = self.citationResponse.get("DN")
                     self.type = 'book-chapter'
                     
                 else:
                     self.type = "journal-article"
-                    self.titleMono = citationResponse.get("BV")
-                    self.titleArticle = citationResponse.get("DN")
+                    self.containerTitle = self.citationResponse.get("BV")
+                    self.title = self.citationResponse.get("DN")
 
-                self.date = citationResponse.get("Y")
+                self.date = dateutil.parser.parse(str(self.citationResponse.get("Y")))
 
-            elif self.source == "CrossRef":
 
-                for key,value in citationResponse.items():
-                    #print(key,value)
+            elif self.citationResponse.get("source") == "CrossRef":
+
+                for key,value in self.citationResponse.items():
+                
                     setattr(self,key,value)
 
                 if hasattr(self,"series-title") or hasattr(self,"volume-title"):
                     self.type = "monograph"
                 else:
                     self.type="journal-article"
+
+                        
 
         def extractMetadataFromCitationResponse(self):
 
@@ -100,8 +105,9 @@ class Citation:
                 if doi != None:
                     print("idno detected") 
                     try:
-                        self.doi = idutils.normalize_doi(doi.string)
+                        #self.doi = idutils.normalize_doi(doi.string)
                         print("looks like it worked")
+                        self.doi = doi
                         #return None
                     except:
                         print("didn't work")
@@ -200,7 +206,7 @@ class Citation:
         def cleanupForOutput(self):
             del self.dataForCrossRef
             del self.citationResponse
-            del self.MongoConn
+            #del self.MongoConn
             if hasattr(self,"issn") == True:
                 self.issn = list(set(self.issn))
         
@@ -261,6 +267,8 @@ class Citation:
                                         if r.text.find("No matches found") == -1:
                                                 self.access = "Library Catalogue"
                                                 break
+                                        else:
+                                                self.access = "none"
                 
 
                         
@@ -293,6 +301,148 @@ class Citation:
 
 
 
+
+
+class Paper:
+
+    def __init__(self, entity):
+
+        self.metadata = json.loads(entity['E'])
+        self.references = None
+        self.doi = self.metadata.get("DOI")
+        self.entity = entity
+        self.id = entity['Id']
+        self.date = entity.get("D")
+        self.authors = entity.get("AA")
+        self.field = entity.get("F")
+        self.type="paper"
+
+       
+    def getReferencesDOI(self):
+
+        if self.doi != None:
+            try:
+                response = c.works(ids = [self.doi])
+                response = response['message']
+            except:
+                print("something went wrong")
+                pass
+            
+            self.work_type = response.get("type")
+            self.references = response.get("reference")
+
+            if self.references != None:
+                citations = []            
+                for reference in self.references:
+
+                    citations.append(self.processReference(reference,"CrossRef"))
+
+                self.references = citations
+            
+            
+            
+                
+                
+
+    def getReferencesNoDOI(self):
+
+        if self.metadata.get("PR") != None:
+            self.references = self.metadata.get("PR")
+            
+        elif self.entity.get("RId") != None:
+            self.references = self.entity.get("RId")
+            
+        citations = []
+        if self.references != None:
+    
+            for reference in self.references:
+                time.sleep(5)
+                
+                expr="Id=" + str(reference)
+                
+
+                r= requests.get("https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?expr="+expr+"&model=latest&attributes=E,Ti,Y,J.JN,C.CN", headers=headers)
+                MsAcademicData = r.json()['entities']
+
+                for entity in MsAcademicData:
+                    citations.append(self.processReference(entity,"Microsoft Academic"))                  
+                    
+
+        if len(citations)>0:
+            self.references = citations
+
+    def processReference(self,citation,source):
+
+        if source == "Microsoft Academic":
+            response = json.loads(citation['E'])
+            response['source'] = "Microsoft Academic"
+            if citation.get("Y") != None:
+                response['Y'] = citation.get("Y")
+
+            return response
+            
+        elif source == "CrossRef":
+            response = citation
+            response['source'] = "CrossRef"
+
+            return response
+
+        else:
+            print("not a valid source")
+
+
+
+c = Crossref(mailto="jdingle@brocku.ca")
+
+
+headers = {"Ocp-Apim-Subscription-Key":"ba7fae63586a4942bb49403fad4009d3"}
+expr="And(Composite(AA.AfN=='brock university'),Y=2018)"
+
+r= requests.get("https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?expr="+expr+"&model=latest&count=5&offset=71&attributes=Id,E,J.JN,C.CN,RId,F.FN,Ti,Y,D,AA.AuN,AA.AuId,AA.AfN,AA.AfId", headers=headers)
+
+data = r.json()['entities']
+
+
+
+for entity in data:
+
+    paper = Paper(entity)
+
+    print(vars(paper))
+    print("")
+
+    paper.getReferencesDOI()
+
+    if paper.references == None:
+        paper.getReferencesNoDOI()
+
+    if paper.references != None:
+        citationID = 0
+        for reference in paper.references:
+            time.sleep(2)
+            print(reference)
+            print("")
+            citationID += 1
+            reference = Citation(paper,reference,citationID)
+            reference.getCrossRefMetadata()
+            if hasattr(reference,"doi") == False:
+                reference.extractMetadataNoDOI()
+            reference.callSFX()
+            reference.callCatalogue()
+            reference.cleanupForOutput()
+            print(vars(reference))
+            print("")
+    else:
+        print("no references found")
+        print("")
+        
+
+    
+
+        
+
+
+                     
 
         
                   
