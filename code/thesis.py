@@ -16,6 +16,7 @@ class Thesis:
                 self.degree = self.allMetadata['degree']
                 self.thesisDate = self.allMetadata['thesisDate']
                 self.harvestedOn = datetime.datetime.now()
+                self.type = "thesis"
         
         def getPDF(self):
                 

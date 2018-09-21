@@ -5,6 +5,7 @@ from urllib.parse import quote
 from mongoConnector import MongoConnector
 #import idutils
 from habanero import Crossref
+from paper import Paper
 import json
 import time
 
@@ -12,7 +13,7 @@ class Citation:
         
         def __init__(self, parentObject, citationResponse, citationID):
 
-                self.id = str(parentObject.id) + str(citationID)
+                self.id = str(parentObject.id) + "-b" + str(citationID)
                 if parentObject.type == "thesis":
                         self.handle = parentObject.handle
                         #self.item = parentObject.id
@@ -41,7 +42,7 @@ class Citation:
                                 self.containerTitle = r['container-title'][0]
                                 self.issn = r['ISSN']
                             elif r.get("type") == "book-chapter":
-                                self.type = "chapter"
+                                self.type = "book-chapter"
                                 self.title = r['title'][0]
                                 self.containerTitle = r['container-title'][0]
                                 self.isbn = r['ISBN']
@@ -50,10 +51,15 @@ class Citation:
                                 self.title = r['title'][0]
                                 self.isbn = r['ISBN']
                             elif r.get("type") == "proceedings-article":
-                                self.type="proceedings"
+                                self.type="proceedings-article"
                                 self.title = r['title'][0]
                                 self.containerTitle = r['container-title'][0]
                                 self.isbn = r['ISBN']
+                            elif r.get("type") == "reference-entry":
+                                self.type = "reference-entry"
+                                self.isbn = r['ISBN']
+                                self.title = r['title'][0]
+                                    
                             self.source = "CrossRef"
 
                         except:
@@ -269,8 +275,12 @@ class Citation:
                                                 break
                                         else:
                                                 self.access = "none"
-                
-
+        def callUnpaywall(self):
+                if hasattr(self,"doi"):
+                        r = requests.get("https://api.unpaywall.org/v2/" + self.doi + "?email=jdingle@brocku.ca")
+                        if r.status_code == 200:
+                                self.isOA = r.json()['is_oa']
+                                self.journalIsOA = r.json()['journal_is_oa']
                         
         def reconcileTitle(self):
 
@@ -301,104 +311,13 @@ class Citation:
 
 
 
-
-
-class Paper:
-
-    def __init__(self, entity):
-
-        self.metadata = json.loads(entity['E'])
-        self.references = None
-        self.doi = self.metadata.get("DOI")
-        self.entity = entity
-        self.id = entity['Id']
-        self.date = entity.get("D")
-        self.authors = entity.get("AA")
-        self.field = entity.get("F")
-        self.type="paper"
-
-       
-    def getReferencesDOI(self):
-
-        if self.doi != None:
-            try:
-                response = c.works(ids = [self.doi])
-                response = response['message']
-            except:
-                print("something went wrong")
-                pass
-            
-            self.work_type = response.get("type")
-            self.references = response.get("reference")
-
-            if self.references != None:
-                citations = []            
-                for reference in self.references:
-
-                    citations.append(self.processReference(reference,"CrossRef"))
-
-                self.references = citations
-            
-            
-            
-                
-                
-
-    def getReferencesNoDOI(self):
-
-        if self.metadata.get("PR") != None:
-            self.references = self.metadata.get("PR")
-            
-        elif self.entity.get("RId") != None:
-            self.references = self.entity.get("RId")
-            
-        citations = []
-        if self.references != None:
-    
-            for reference in self.references:
-                time.sleep(5)
-                
-                expr="Id=" + str(reference)
-                
-
-                r= requests.get("https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?expr="+expr+"&model=latest&attributes=E,Ti,Y,J.JN,C.CN", headers=headers)
-                MsAcademicData = r.json()['entities']
-
-                for entity in MsAcademicData:
-                    citations.append(self.processReference(entity,"Microsoft Academic"))                  
-                    
-
-        if len(citations)>0:
-            self.references = citations
-
-    def processReference(self,citation,source):
-
-        if source == "Microsoft Academic":
-            response = json.loads(citation['E'])
-            response['source'] = "Microsoft Academic"
-            if citation.get("Y") != None:
-                response['Y'] = citation.get("Y")
-
-            return response
-            
-        elif source == "CrossRef":
-            response = citation
-            response['source'] = "CrossRef"
-
-            return response
-
-        else:
-            print("not a valid source")
-
-
-'''
 c = Crossref(mailto="jdingle@brocku.ca")
 
 
 headers = {"Ocp-Apim-Subscription-Key":"ba7fae63586a4942bb49403fad4009d3"}
 expr="And(Composite(AA.AfN=='brock university'),Y=2018)"
 
-r= requests.get("https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?expr="+expr+"&model=latest&count=5&offset=71&attributes=Id,E,J.JN,C.CN,RId,F.FN,Ti,Y,D,AA.AuN,AA.AuId,AA.AfN,AA.AfId", headers=headers)
+r= requests.get("https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?expr="+expr+"&model=latest&count=5&offset=171&attributes=Id,E,J.JN,C.CN,RId,F.FN,Ti,Y,D,AA.AuN,AA.AuId,AA.AfN,AA.AfId", headers=headers)
 
 data = r.json()['entities']
 
@@ -420,14 +339,15 @@ for entity in data:
         citationID = 0
         for reference in paper.references:
             time.sleep(2)
-            print(reference)
-            print("")
+            #print(reference)
+            #print("")
             citationID += 1
             reference = Citation(paper,reference,citationID)
             reference.getCrossRefMetadata()
             if hasattr(reference,"doi") == False:
                 reference.extractMetadataNoDOI()
             reference.callSFX()
+            reference.callUnpaywall()
             reference.callCatalogue()
             reference.cleanupForOutput()
             print(vars(reference))
@@ -436,7 +356,7 @@ for entity in data:
         print("no references found")
         print("")
         
-'''
+
     
 
         
