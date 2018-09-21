@@ -1,7 +1,7 @@
 from thesis import Thesis
 from repository import Repository
 from citation import Citation
-
+from msacademic import MSAcademic
 from mongoConnector import MongoConnector
 from pymongo import MongoClient
 from bs4 import BeautifulSoup, Comment
@@ -9,18 +9,18 @@ import dateutil.parser
 import requests
 
 #starts by defining repo
-repo = Repository()
+repo = MSAcademic()
 
 #setup Mongo connection and ensure indexes are created
 mongoConn = MongoConnector()
 mongoConn.setupCollections()
 
 #harvest theses from 2018, store IDs in Mongo to be processed
-repo.harvest(2013)
+repo.harvest()
 
 #process a batch of theses
 #ProcessTheses(20)
-
+'''
 def ProcessThesis():
 
         failed = None
@@ -63,3 +63,4 @@ def ProcessThesis():
 
         
         
+'''

@@ -22,15 +22,16 @@ class MSAcademic:
 
                 papers = r.json()['entities']
 
-                print(len(papers))
-
                 for paper in papers:
                         paper = Paper(paper)
 
-                        doc = {"id":"MS" + str(paper.id)}
+                        doc = {"item":"MS-" + str(paper.id)}
+                        print(doc)
+
                         print("Writing to Mongo...")
                         try:
                                 self.mongoConn.updateCollection("toProcess","add",doc)
                         except:
                                 print("failed. already in collection")
                         print(doc)
+

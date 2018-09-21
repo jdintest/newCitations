@@ -391,7 +391,7 @@ class Paper:
             print("not a valid source")
 
 
-
+'''
 c = Crossref(mailto="jdingle@brocku.ca")
 
 
@@ -436,7 +436,7 @@ for entity in data:
         print("no references found")
         print("")
         
-
+'''
     
 
         
